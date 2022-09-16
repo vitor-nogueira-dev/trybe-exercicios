@@ -10,3 +10,6 @@ ol:active{
     font-family: monospace;
     color: white;
 }
+ol, ul {
+    list-style: none;
+}
