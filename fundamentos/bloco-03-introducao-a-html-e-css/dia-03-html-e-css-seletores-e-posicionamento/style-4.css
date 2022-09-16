@@ -8,6 +8,7 @@ div:hover{
     background-color: rgb(236, 87, 87);
     color: white;
     width: 200px;
+    font-style: italic;
 }
 .secundaria{
     background-color: coral;
@@ -18,6 +19,7 @@ div:hover{
     background-color: rgb(147, 77, 51);
     color: chartreuse;
     width: 600px;
+    font-style: italic;
 }
 .escura{
     background-color: brown;
@@ -28,6 +30,8 @@ div:hover{
     background-color: lightcoral;
     color: lightgreen; 
     width: 200px; 
+    font-style: italic;
 }
+
 
 
