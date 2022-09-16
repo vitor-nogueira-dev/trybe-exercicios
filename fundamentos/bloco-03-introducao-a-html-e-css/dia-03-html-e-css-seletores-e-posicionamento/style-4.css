@@ -1,3 +1,18 @@
 div:hover{
     border: 3px dashed black;
 }
+.primaria {
+    background-color: rgb(236, 87, 87);
+}
+.secundaria{
+    background-color: coral;
+}
+.complementar{
+    background-color: rgb(147, 77, 51);
+}
+.escura{
+    background-color: brown;
+}
+.clara{
+    background-color: lightcoral;
+}
