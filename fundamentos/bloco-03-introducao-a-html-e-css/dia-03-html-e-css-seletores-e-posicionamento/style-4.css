@@ -16,3 +16,18 @@ div:hover{
 .clara{
     background-color: lightcoral;
 }
+h3.primaria{
+    color: white;
+}
+h3.secundaria{
+    color: blue;
+}
+h3.complementar{
+    color: chartreuse;
+}
+h3.escura{
+    color: deeppink;
+}
+h3.clara{
+    color: lightgreen;
+}
