@@ -3,31 +3,22 @@ div:hover{
 }
 .primaria {
     background-color: rgb(236, 87, 87);
+    color: white
 }
 .secundaria{
     background-color: coral;
+    color: blue;
 }
 .complementar{
     background-color: rgb(147, 77, 51);
+    color: chartreuse;
 }
 .escura{
     background-color: brown;
+    color: deeppink;
 }
 .clara{
     background-color: lightcoral;
+    color: lightgreen;  
 }
-h3.primaria{
-    color: white;
-}
-h3.secundaria{
-    color: blue;
-}
-h3.complementar{
-    color: chartreuse;
-}
-h3.escura{
-    color: deeppink;
-}
-h3.clara{
-    color: lightgreen;
-}
+
