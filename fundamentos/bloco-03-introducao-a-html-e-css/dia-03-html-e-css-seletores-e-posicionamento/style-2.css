@@ -1,19 +1,23 @@
+@charset "UTF-8";
+
+
 .super-mario {
     width: 200px;
-  }
-  
-  .goomba {
+    position: absolute;
+}
+.goomba {
     width: 100px;
+    position: absolute;
+} 
+.baloon {
+    position: absolute;
+  
   }
-  
-  .baloon {
-  
-  }
-  
-  .speech {
+.speech {
     font-size: 25px;
+    position: absolute;
   }
-  
-  .bowser {
+.bowser {
     width: 200px;
+    position: absolute;
   }
