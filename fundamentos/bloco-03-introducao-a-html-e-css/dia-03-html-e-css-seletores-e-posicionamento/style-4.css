@@ -1,24 +1,33 @@
+body{
+    text-align: center;
+}
 div:hover{
     border: 3px dashed black;
 }
 .primaria {
     background-color: rgb(236, 87, 87);
-    color: white
+    color: white;
+    width: 200px;
 }
 .secundaria{
     background-color: coral;
     color: blue;
+    width: 200px;
 }
 .complementar{
     background-color: rgb(147, 77, 51);
     color: chartreuse;
+    width: 600px;
 }
 .escura{
     background-color: brown;
     color: deeppink;
+    width: 200px;
 }
 .clara{
     background-color: lightcoral;
-    color: lightgreen;  
+    color: lightgreen; 
+    width: 200px; 
 }
+
 
