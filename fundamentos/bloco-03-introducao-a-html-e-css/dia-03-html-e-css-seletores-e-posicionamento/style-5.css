@@ -27,3 +27,25 @@ li em {
 .java{
     background-color: pink;
 }
+a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+.stack:hover{
+    color: orange;
+}
+.w3:hover{
+    color: green;
+}
+.mdn:hover{
+    color: black;
+}
+.dev:hover{
+    color: yellow;
+}
+.trybe:hover{
+    color: green;
+}
