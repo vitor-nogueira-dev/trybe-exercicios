@@ -5,115 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stomatopoda</title>
-    <style>
-      * {
-        font-family: serif;
-        font-size: 18px;
-        margin: 10px;
-      }
-      section {
-        border: 2px red solid;
-        text-align: justify;
-      }
-      table,
-      tr,
-      th,
-      td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 5px;
-        text-align: center;
-      }
-      .aside {
-        float: right;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
+      <nav class="navigation">
+        <a href="#">Página Inicial</a>
+        <a href="#">Sobre</a>
+        <a href="#">Tá na Mídia</a>
+      </nav>
     </header>
-    <nav>
-      <a href="#">Pagina Inicial</a>
-      <a href="#">Sobre</a>
-      <a href="#">Contato</a>
-    </nav>
-    <article>
-      <h2>Fatos sobre o Stomatopoda</h2>
-      <hr />
-      <section>
+    <main>
+      <section class="conteudo">
+        <h2>Fatos sobre o Stomatopoda</h2>
         <p>
-          &nbsp &nbsp O <em>camarão mantis</em> ou
-          <em>camarão-louva-deus-palhaço</em> (sério!) é um dos animais com um
-          dos mais fortes socos de todo o planeta. Conhecido pelo nome
-          científico <em>Odontodactylus scyllarus</em>. Esse artrópode que
-          possui pouco menos de 12 centímetros é capaz de quebrar conchas e até
-          vidros de aquário com seus membros, sendo um dos animais
+          O camarão mantis ou <em>camarão-louva-deus-palhaço</em> (sério!) é um
+          dos animais com um dos mais fortes socos de todo o planeta. Conhecido
+          pelo nome científico <em>Odontodactylus scyllarus.</em> Esse artrópode
+          que possui pouco menos de 12 centímetros é capaz de quebrar conchas e
+          até vidros de aquário com seus membros, sendo um dos animais
           proporcionalmente mais fortes de todo o mundo.
         </p>
+      </section>
 
+      <section class="foto-stomatopoda-frente">
+        <img
+          src="stomatopoda/imagens/frente.jpg"
+          alt="Stomatopoda colorido de frente"
+        />
+      </section>
+
+      <section class="conteudo">
         <p>
-          &nbsp &nbsp Comum nos oceanos Pacífico e Índico, esses camarões são da
-          ordem <em>Stomatopoda.</em> As mais de 400 espécies dessa categoria
+          Comum nos oceanos Pacífico e Índico, esses camarões são da ordem
+          <em>Stomatopoda</em>. As mais de 400 espécies dessa categoria
           morfológica são conhecidas por sua segunda pata torácica, um membro
           extremamente forte e desenvolvido que consegue destruir presas com
           facilidade.
         </p>
-        <aside>
-          <table class="classificacao-cientifica">
-            <th colspan="2">Classificação Científica</th>
-            <tr>
-              <th>Reino</th>
-              <td>Animal</td>
-            </tr>
-            <tr>
-              <th>Filo</th>
-              <td>Arthropoda</td>
-            </tr>
-            <tr>
-              <th>Subfilo</th>
-              <td>Crustacea</td>
-            </tr>
-            <tr>
-              <th>Classe</th>
-              <td>Malacostraca</td>
-            </tr>
-            <tr>
-              <th>Subclasse</th>
-              <td>Hoplocarida</td>
-            </tr>
-            <tr>
-              <th>Ordem</th>
-              <td>Stomatopoda</td>
-            </tr>
-          </table>
-        </aside>
       </section>
+      <aside>
+        <table class="classificacao-cientifica">
+          <th colspan="2">Classificação Científica</th>
+          <tr>
+            <th>Reino</th>
+            <td>Animal</td>
+          </tr>
+          <tr>
+            <th>Filo</th>
+            <td>Arthropoda</td>
+          </tr>
+          <tr>
+            <th>Subfilo</th>
+            <td>Crustacea</td>
+          </tr>
+          <tr>
+            <th>Classe</th>
+            <td>Malacostraca</td>
+          </tr>
+          <tr>
+            <th>Subclasse</th>
+            <td>Hoplocarida</td>
+          </tr>
+          <tr>
+            <th>Ordem</th>
+            <td>Stomatopoda</td>
+          </tr>
+        </table>
+      </aside>
 
-      <section class="table-classification"></section>
-
-      <section>
-        <h3>Curiosidade</h3>
+      <article class="citacao-maya">
+        <h2>Tá na mídia!</h2>
         <p>
-          Segundo a bióloga da Universidade San Jose Maya deVries, a força do
-          soco desse animal é explicável pela fisiologia do animal:
+          Segundo a bióloga da Universidade San Jose
+          <a href="http://www.mayadevries.com" target="_blank">Maya deVries</a>,
+          a força do soco desse animal é explicável pela fisiologia do animal:
         </p>
-
-        <q
-          >O camarão mantis possui um sistema de acúmulo de energia para
-          <em>‘engatilhar’</em> sua pata. Ele possui um sistema de tranca que
+        <blockquote>
+          "O camarão mantis possui um sistema de acúmulo de energia para
+          <em>'engatilhar'</em> sua pata. Ele possui um sistema de tranca que
           reserva a energia. Portanto, quando o animal está pronto para atacar,
           ele contrai seus músculos e libera a tranca. Toda a energia acumulada
           nos músculos e no exoesqueleto do camarão é liberada e a pata gira à
           frente com uma aceleração absurda, que chega à
-          <strong>80 quilômetros por hora</strong></q
-        >
-      </section>
+          <strong>80 quilômetros</strong> por hora."
+        </blockquote>
+      </article>
 
-      <!-- <section>
-            <h3>Stomatopoda utilizando sua força para abrir uma concha:</h3>
-            <iframe width="600" height="315" src="https://www.youtube.com/embed/i-ahuZEvWH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section> -->
-    </article>
+      <section class="foto-maya">
+        <img
+          src="./stomatopoda/imagens/maya.jpeg"
+          alt="Maya de Vries"
+          width="450px "
+        />
+      </section>
+    </main>
+    <footer class="footer">
+      "Conteúdo compilado por Vítor Nogueira, 2022"
+    </footer>
   </body>
 </html>
