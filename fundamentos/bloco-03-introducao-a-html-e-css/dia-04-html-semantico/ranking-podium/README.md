@@ -4,4 +4,4 @@
 
 - Lembre-se que a estrutura da página deve ser mantida para que a semântica do código seja preservada. 
 
-![Exemplo do resultado:](/ranking-podium/exemplo.png)
+![Exemplo do resultado:](/ranking-podium/exemplo.pngranking-podium/exemplo.png "estou testando")
