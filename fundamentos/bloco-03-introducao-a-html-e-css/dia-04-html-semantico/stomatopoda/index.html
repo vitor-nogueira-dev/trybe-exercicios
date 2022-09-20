@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header" id="pagina-inicial">
       <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
       <nav class="navigation">
-        <a href="#">Página Inicial</a>
-        <a href="#">Sobre</a>
-        <a href="#">Tá na Mídia</a>
+        <a class="link-header" href="#pagina-inicial">Página Inicial</a>
+        <a class="link-header" href="#sobre">Sobre</a>
+        <a class="link-header" href="#ta-na-midia">Tá na Mídia</a>
+        <a class="link-header" href="#referencias">Referências</a>
       </nav>
     </header>
     <main>
-      <section class="conteudo">
+      <section class="conteudo" id="sobre">
         <h2>Fatos sobre o Stomatopoda</h2>
         <p>
           O camarão mantis ou <em>camarão-louva-deus-palhaço</em> (sério!) é um
@@ -27,13 +28,9 @@
           até vidros de aquário com seus membros, sendo um dos animais
           proporcionalmente mais fortes de todo o mundo.
         </p>
-      </section>
 
-      <section class="foto-stomatopoda-frente">
         <img src="imagens/frente.jpg" alt="Stomatopoda colorido de frente" />
-      </section>
 
-      <section class="conteudo">
         <p>
           Comum nos oceanos Pacífico e Índico, esses camarões são da ordem
           <em>Stomatopoda</em>. As mais de 400 espécies dessa categoria
@@ -41,90 +38,117 @@
           extremamente forte e desenvolvido que consegue destruir presas com
           facilidade.
         </p>
-      </section>
-      <aside>
-        <table class="classificacao-cientifica">
-          <th colspan="2">Classificação Científica</th>
-          <tr>
-            <th>Reino</th>
-            <td>Animal</td>
-          </tr>
-          <tr>
-            <th>Filo</th>
-            <td>Arthropoda</td>
-          </tr>
-          <tr>
-            <th>Subfilo</th>
-            <td>Crustacea</td>
-          </tr>
-          <tr>
-            <th>Classe</th>
-            <td>Malacostraca</td>
-          </tr>
-          <tr>
-            <th>Subclasse</th>
-            <td>Hoplocarida</td>
-          </tr>
-          <tr>
-            <th>Ordem</th>
-            <td>Stomatopoda</td>
-          </tr>
-        </table>
+
+        <aside>
+          <table class="classificacao-cientifica">
+            <th colspan="2">Classificação Científica</th>
+            <tr>
+              <th>Reino</th>
+              <td>Animal</td>
+            </tr>
+            <tr>
+              <th>Filo</th>
+              <td>Arthropoda</td>
+            </tr>
+            <tr>
+              <th>Subfilo</th>
+              <td>Crustacea</td>
+            </tr>
+            <tr>
+              <th>Classe</th>
+              <td>Malacostraca</td>
+            </tr>
+            <tr>
+              <th>Subclasse</th>
+              <td>Hoplocarida</td>
+            </tr>
+            <tr>
+              <th>Ordem</th>
+              <td>Stomatopoda</td>
+            </tr>
+          </table>
+    
+      
+          <p class="link-video">
+            Conheça mais sobre o Stomatopoda (<a
+             href="https://www.youtube.com/watch?v=E0Li1k5hGBE"
+              target="_blank"
+             >clique aqui</a
+            >)
+         </p>
       </aside>
 
-      <article class="citacao-maya">
-        <h2>Tá na mídia!</h2>
-        <p>
-          Segundo a bióloga da Universidade San Jose
-          <a href="http://www.mayadevries.com" target="_blank">Maya deVries</a>,
-          a força do soco desse animal é explicável pela fisiologia do animal:
-        </p>
-        <blockquote>
-          "O camarão mantis possui um sistema de acúmulo de energia para
-          <em>'engatilhar'</em> sua pata. Ele possui um sistema de tranca que
-          reserva a energia. Portanto, quando o animal está pronto para atacar,
-          ele contrai seus músculos e libera a tranca. Toda a energia acumulada
-          nos músculos e no exoesqueleto do camarão é liberada e a pata gira à
-          frente com uma aceleração absurda, que chega à
-          <strong>80 quilômetros</strong> por hora."
-        </blockquote>
+      <article class="citacao-maya conteudo" id="ta-na-midia">
+        
+          <h2>Tá na mídia!</h2>
+          <p>
+            Segundo a bióloga da Universidade San Jose
+            <a
+              class="link-maya"
+              href="http://www.mayadevries.com"
+              target="_blank"
+              >Maya deVries</a
+            >, a força do soco desse animal é explicável pela fisiologia do
+            animal:
+          </p>
+
+          <p>
+            "O camarão mantis possui um sistema de acúmulo de energia para
+            <em>'engatilhar'</em> sua pata. Ele possui um sistema de tranca que
+            reserva a energia. Portanto, quando o animal está pronto para
+            atacar, ele contrai seus músculos e libera a tranca. Toda a energia
+            acumulada nos músculos e no exoesqueleto do camarão é liberada e a
+            pata gira à frente com uma aceleração absurda, que chega à
+            <strong>80 quilômetros</strong> por hora."
+          </p>
+        <section>
+          <img
+            class="foto-maya"
+            src="imagens/maya.jpeg"
+            alt="Maya de Vries"
+            width="450px "
+          />
+        </section>
       </article>
 
-      <section class="foto-maya">
-        <img src="imagens/maya.jpeg" alt="Maya de Vries" width="450px " />
-      </section>
-
-      <section class="referencias">
+      <nav class="nav-referencias" id="referencias">
         <h3>Referências</h3>
-        <ul class="referencias">
-          <li>
-            <a href="http://www.mayadevries.com" target="_blank"
-              >Maya deVries</a
-            >
-          </li>
-          <a href="https://pt.wikipedia.org/wiki/Stomatopoda" target="_blank">
-            <li>Wikipedia</li>
-          </a>
-          <li>
-            <a
-              href="https://www.hypeness.com.br/2021/08/camarao-mantis-o-animal-com-o-soco-mais-potente-da-natureza-capaz-de-destruir-aquarios/"
-              >Hypeness</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.google.com/search?q=stomatopoda&client=safari&rls=en&sxsrf=ALiCzsaAGE5mN23GqIyGnOkSvIqjv8UQqA:1663626136590&source=lnms&tbm=isch&sa=X&ved=2ahUKEwju5qOn8qH6AhWltZUCHflcCPMQ_AUoAXoECAIQAw&biw=1120&bih=894&dpr=2#imgrc=jahU4Yz49-SjVM"
-              target="_blank"
-              >Google</a
-            >
-          </li>
-        </ul>
-      </section>
+
+        <a
+          class="link-referencias"
+          href="http://www.mayadevries.com"
+          target="_blank"
+          >Maya deVries</a
+        >
+
+        <a
+          class="link-referencias"
+          href="https://pt.wikipedia.org/wiki/Stomatopoda"
+          target="_blank"
+          >Wikipedia
+        </a>
+
+        <a
+          class="link-referencias"
+          href="https://www.hypeness.com.br/2021/08/camarao-mantis-o-animal-com-o-soco-mais-potente-da-natureza-capaz-de-destruir-aquarios/"
+          target="_blank"
+          >Hypeness</a
+        >
+
+        <a
+          class="link-referencias"
+          href="https://www.google.com/search?q=stomatopoda&client=safari&rls=en&sxsrf=ALiCzsaAGE5mN23GqIyGnOkSvIqjv8UQqA:1663626136590&source=lnms&tbm=isch&sa=X&ved=2ahUKEwju5qOn8qH6AhWltZUCHflcCPMQ_AUoAXoECAIQAw&biw=1120&bih=894&dpr=2#imgrc=jahU4Yz49-SjVM"
+          target="_blank"
+          >Google</a
+        >
+      </nav>
+      <footer class="footer">
+        "Conteúdo compilado por
+        <a class="link-footer" href="https://www.instagram.com/vitorleonel.br/"
+          >Vítor Nogueira</a
+        >, 2022"
+      </footer>
     </main>
-    <footer class="footer">
-      "Conteúdo compilado por
-      <a href="https://www.instagram.com/vitorleonel.br/">Vítor Nogueira</a>,
-      2022"
-    </footer>
+    
   </body>
 </html>
