@@ -1,0 +1,78 @@
+* {
+  padding: 5px;
+  margin: auto;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgb(59, 126, 59);
+  width: auto;
+  text-align: center;
+  padding: 8px;
+}
+.link-header {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(93, 232, 146);
+  border-radius: 30px;
+  padding: auto;
+}
+.link-header:hover {
+  background-color: azure;
+}
+h1 {
+  padding-bottom: 20px;
+  font-size: 1.5em;
+  color: white;
+}
+.conteudo {
+  text-align: justify;
+}
+table,
+tr,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+img {
+  width: 50%;
+  margin: auto;
+  display: block;
+  height: 50%;
+}
+.classificacao-cientifica {
+  width: 40%;
+  margin: auto;
+}
+.nav-referencias,
+h3,
+.link-video,
+a {
+  text-align: center;
+}
+.link-referencias:hover,
+.link-maya:hover,
+a:hover {
+  color: rgb(59, 126, 59);
+}
+.link-referencias,
+.link-footer,
+.link-maya,
+a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  background-color: rgb(59, 126, 59);
+  width: 500px;
+  border-radius: 8px;
+}
+.link-footer:hover {
+  color: white;
+}
