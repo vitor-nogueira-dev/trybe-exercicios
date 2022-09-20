@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+.super-mario {
+    width: 200px;
+    position: absolute;
+    z-index: 3;
+}
+.goomba {
+    width: 100px;
+    position: absolute;
+    z-index: 4;
+    left: 120px;
+    top: 340px;
+    
+} 
+.baloon {
+    position: absolute;
+    top: 80px;
+    left: 280px;
+    z-index: 1;
+    
+  }
+.speech {
+    font-size: 25px;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    z-index: 2;
+}
+.bowser {
+    width: 200px;
+    position: absolute;
+    top: 220px;
+    left: 560px;
+}
