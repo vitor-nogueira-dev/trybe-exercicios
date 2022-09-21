@@ -13,4 +13,4 @@ birthCity = 'Belo Horizonte';
 
 console.log(birthCity)
 
-// O erro se dá pelo fato de ser uma constante, e elas não são alteráveis. 
+// O erro se dá pelo fato de ser uma constante, ela não é alterável.
