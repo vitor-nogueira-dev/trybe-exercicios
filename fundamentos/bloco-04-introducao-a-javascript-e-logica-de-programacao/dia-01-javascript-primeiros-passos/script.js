@@ -42,3 +42,41 @@ console.log(area)
 const perimeter = (base * 2) + (height * 2); 
 
 console.log(perimeter)
+
+// Parte IV
+
+let note = 30; 
+
+if (note >= 80){
+    console.log('Parabéns, você foi aprovada(o)!')
+} else if (note < 80 && note >= 60){
+    console.log('Você está na nossa lista de espera')
+} else {
+    console.log('Você foi reprovada(o)!')
+}
+
+// Você foi reprovada(o)!
+
+note = 85.5;
+
+if (note >= 80){
+    console.log('Parabéns, você foi aprovada(o)!')
+} else if (note < 80 && note >= 60){
+    console.log('Você está na nossa lista de espera')
+} else {
+    console.log('Você foi reprovada(o)!')
+}
+
+// Parabéns, você foi aprovada(o)!
+
+note = 64.5; 
+
+if (note >= 80){
+    console.log('Parabéns, você foi aprovada(o)!')
+} else if (note < 80 && note >= 60){
+    console.log('Você está na nossa lista de espera')
+} else {
+    console.log('Você foi reprovada(o)!')
+}
+
+// Você está na nossa lista de espera
