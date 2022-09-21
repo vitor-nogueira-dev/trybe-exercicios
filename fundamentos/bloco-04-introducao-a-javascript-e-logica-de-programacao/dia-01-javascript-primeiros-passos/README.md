@@ -70,3 +70,13 @@
 Implemente condicionais para que:
 - Se nossa variável "weekDay" for "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira" ou "sexta-feira", imprima "Oba, mais um dia de aprendizado na Trybe >:D".
 - Se for algum dia de fim de semana, imprima "FINALMENTE, descanso merecido UwU".
+
+> Parte VII 
+
+- Crie uma variável para armazenar o status da pessoa candidata no processo seletivo, que pode ser: 'aprovada', 'lista' ou 'reprovada';
+
+1 - Crie uma estrutura condicional com o switch/case que irá imprimir as seguintes mensagens:
+- Caso 'aprovada', imprima “Parabéns, você foi aprovada(o)!”.
+- Caso 'lista', imprima “Você está na nossa lista de espera”.
+- Caso 'reprovada', imprima “Você foi reprovada(o)”.
+- Caso default, imprima a mensagem de “Informação incorreta”.
