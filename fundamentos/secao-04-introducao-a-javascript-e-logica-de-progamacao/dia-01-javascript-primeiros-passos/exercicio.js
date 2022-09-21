@@ -96,3 +96,23 @@ switch (transform) {
     console.log("Peça inválida, verifique e tente novamente");
 }
 // Rei: pode se mover em todas as direções
+
+let nota = 89; 
+
+if (nota >= 90 && nota <= 100){ 
+    console.log('Sua nota convertida  em conceito é A')
+} else if (nota >= 80 && nota <= 89){
+    console.log('Sua nota convertida em conceito é B')
+} else if (nota >= 70 && nota <= 79){
+    console.log('Sua nota convertida em conceito é C')
+} else if (nota >= 60 && nota <= 69){
+    console.log('Sua nota convertida em conceito é D')
+} else if (nota >= 50 && nota <= 59){
+    console.log('Sua nota convertida em conceito é E')
+} else if (nota < 50 && nota >= 0){
+    console.log('Sua nota convertida em conceito é F')
+} else {
+    console.log('Erro, valor inválido!');
+}
+
+// Sua nota convertida em conceito é B
