@@ -83,7 +83,7 @@ if (note >= 80){
 
 // Parte V
 
-let currentHour = 16; 
+let currentHour = 12; 
 let message = ''; 
 
 if (currentHour >= 22){
@@ -100,3 +100,16 @@ if (currentHour >= 22){
     message = "Hora inválida, digite a hora correta"
 }
 console.log(message);
+// Hora do almoço!!!
+
+// Parte VI
+
+let weekDay = 'quarta-feira'; 
+
+if (weekDay === 'segunda-feira' || weekDay === 'terça-feira' || weekDay === 'quarta-feira' || weekDay === 'quinta-feira' || weekDay === 'sexta-feira'){
+    console.log('Oba, mais um dia de aprendizado na Trybe >:D') 
+} else {
+    console.log('FINALMENTE, descanso merecido UwU')
+}
+
+// Oba, mais um dia de aprendizado na Trybe >:D

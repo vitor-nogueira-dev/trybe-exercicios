@@ -63,3 +63,10 @@
 - Se o horário estiver entre 4 e 11, insira "Hmmm, cheiro de café recém passado" na variável "message".
 
 4 - Agora imprima a variável message fora das suas condições.
+
+> Parte VI 
+
+1 - Crie uma variável chamada "weekDay" que recebe a string "quarta-feira".
+Implemente condicionais para que:
+- Se nossa variável "weekDay" for "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira" ou "sexta-feira", imprima "Oba, mais um dia de aprendizado na Trybe >:D".
+- Se for algum dia de fim de semana, imprima "FINALMENTE, descanso merecido UwU".
