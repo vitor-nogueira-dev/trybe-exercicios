@@ -20,7 +20,7 @@ Módulo (a % b)
 - Para os ângulos serem de um triângulo válido, a soma dos três deve ser 180 graus.
 Um ângulo será considerado inválido se não tiver um valor positivo.
 
->Utilize switch/case para fazer um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+> Utilize switch/case para fazer um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
 
 - Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
 
