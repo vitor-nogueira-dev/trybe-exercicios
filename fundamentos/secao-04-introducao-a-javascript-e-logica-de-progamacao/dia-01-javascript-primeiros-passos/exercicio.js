@@ -172,15 +172,15 @@ let salarioBase = salarioBruto - impostoInss;
 if (salarioBruto <= 1903.98) {
   impostoIr = 0;
 } else if (salarioBruto <= 2826.65) {
-  impostoIr = (salarioBase * 0.075) - 142.80;
+  impostoIr = salarioBase * 0.075 - 142.8;
 } else if (salarioBruto <= 3751.05) {
-  impostoIr = (salarioBase * 0.15) - 354.80;
+  impostoIr = salarioBase * 0.15 - 354.8;
 } else if (salarioBruto <= 4664.68) {
-  impostoIr = (salarioBase * 0.225) - 636.13;
+  impostoIr = salarioBase * 0.225 - 636.13;
 } else {
-  impostoIr = (salarioBase * 0.275) - 869.36;
+  impostoIr = salarioBase * 0.275 - 869.36;
 }
 
-console.log('Seu salário líquido a receber é: ' + (salarioBase - impostoIr));
- 
+console.log("Seu salário líquido a receber é: " + (salarioBase - impostoIr));
+
 // Seu salário líquido a receber é: 4095.61
