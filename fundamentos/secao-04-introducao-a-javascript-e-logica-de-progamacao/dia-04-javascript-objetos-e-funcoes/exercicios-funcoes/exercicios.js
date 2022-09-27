@@ -20,5 +20,5 @@ function maiorValor (valores){
     }
     return indiceMaior
 }
-console.log(maiorValor([2, 3, 6, 7, 10, 1]));
+console.log(maiorValor([266, 33, 16, 32, 1005, 101])); // 4
 
