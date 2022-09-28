@@ -9,16 +9,17 @@
 <body>
     <header>
         <h2 id="page-title">Título</h2>
-        <p id="paragraph">Dê uma cor para este parágrafo!</p>
+        <p id="paragraph" class="paragraph-class">Dê uma cor para este parágrafo!</p>
         <h4 id="subtitle">Subtítulo</h4>
-        <p id="second-paragraph">Segundo parágrafo!</p>
+        <p id="second-paragraph" class="paragraph-class">Segundo parágrafo!</p>
       </header>
       <script>
         const paragraph = document.getElementById("paragraph");
         paragraph.style.color = "blue";
-        document.getElementById('page-title').innerHTML = 'Prova de Fogo'
-        document.getElementById('second-paragraph').innerHTML = 'Estou aprendendo a usar o DOM'
-        document.getElementById('subtitle').innerHTML = 'Sou aluno da Trybe'
+        document.getElementsByClassName('paragraph-class')[0].innerHTML = 'Testando getElementsByClassName'
+        document.getElementsByClassName('paragraph-class')[1].innerHTML = 'Testando getElementsByClassName'
+        document.getElementsByClassName('paragraph-class')[0].style.color = 'red'
+        document.getElementsByTagName('h4')[0].style.color = 'purple'
       </script>
 </body>
 </html>
