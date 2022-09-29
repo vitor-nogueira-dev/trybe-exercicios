@@ -37,7 +37,25 @@
 
         document.querySelector('#filhoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling;
         
+        let father = document.querySelector('#pai');
+        let todosOsFilhos = pai.childNodes;
+        
+        for (let index = todosOsFilhos.length -1 ; index >= 0 ; index -= 1){
+          let filhoAtual = todosOsFilhos[index];
+          if(filhoAtual.id !== 'elementoOndeVoceEsta'){
+            filhoAtual.remove()
+          }
+        }
 
+        let primeiroFilho = document.querySelector('#primeiroFilho');
+        primeiroFilho.remove()
+
+        let segundoEUltimoFilho = document.querySelector('#segundoEUltimoFilho');
+        segundoEUltimoFilho.remove()
+
+        let terceiroFilho = document.querySelector('#terceiroFilho');
+        terceiroFilho.remove()
+        
       </script>
 </body>
 </html>
