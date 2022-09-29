@@ -37,24 +37,29 @@
     </header>
     <main class="main-content">
       <section class="center-content">
-        <p>Texto padrão do nosso site</p>
-        <p class="paragrafo-pessoal">-----</p>
+        <p class="first-paragraph">Texto padrão do nosso site</p>
+        <p class="second-paragraph">-----</p>
         <p>Trybe</p>
       </section>
     </main>
     <script>
         // Exercício - 1
-        document.querySelector('.paragrafo-pessoal').innerText = 'Daqui a dois anos me vejo formado na Trybe e cursando Eng da Computação; e trabalhando com desenvolvimento web'
+        document.querySelector('.second-paragraph').innerText = 'Daqui a dois anos me vejo formado na Trybe e cursando Eng da Computação; e trabalhando com desenvolvimento web';
 
         // Exercício - 2
-        document.querySelector('.main-content').style.backgroundColor = 'rgb(76, 164, 109)'
+        document.querySelector('.main-content').style.backgroundColor = 'rgb(76, 164, 109)';
 
         // Exercício - 3
-        document.querySelector('.center-content').style.backgroundColor = 'white'
+        document.querySelector('.center-content').style.backgroundColor = 'white';
 
         // Exerício - 4 
-        document.querySelector('.title').innerHTML = 'Exercícios - JavaScript'
-        
+        document.querySelector('.title').innerHTML = 'Exercícios - JavaScript';
+
+        // Exercício - 5
+        document.querySelector('.first-paragraph').innerHTML = 'Maiúsculo'.toUpperCase();
+      
+       
+   
         /*
       Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
       - document.getElementById()
