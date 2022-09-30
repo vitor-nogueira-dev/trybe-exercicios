@@ -39,6 +39,7 @@ window.location.replace('https://github.com/vitor-nogueira96');
 myWebpage.addEventListener('mouseover', function(){
 myWebpage.style.color= 'red'
 })
+
 // Segue abaixo um exemplo do uso de event.target:
 
 
