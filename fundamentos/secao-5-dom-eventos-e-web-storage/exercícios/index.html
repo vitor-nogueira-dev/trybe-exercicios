@@ -89,6 +89,29 @@
       img.className = "small-image"
       secaoEsquerda.appendChild(img);
       img.src = 'https://picsum.photos/200';
+      
+      let listaNaoOrdenada = document.createElement('ul');
+      secaoDireita.appendChild(listaNaoOrdenada);
+
+      let numeroPorExtenso = [ 
+        'um', 
+        'dois',
+        'três',
+        'quatro',
+        'cinco',
+        'seis',
+        'sete',
+        'oito',
+        'nove',
+        'dez',
+      ];
+      for (let index in numeroPorExtenso){
+        let linhasListaNaoOrdenada = document.createElement('li');
+        linhasListaNaoOrdenada.innerHTML = numeroPorExtenso[index];
+        listaNaoOrdenada.appendChild(linhasListaNaoOrdenada);
+      }
+      
+    
     </script>
   </body>
 </html>
