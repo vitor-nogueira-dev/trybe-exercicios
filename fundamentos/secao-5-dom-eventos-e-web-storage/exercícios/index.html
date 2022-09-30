@@ -61,8 +61,7 @@
       let primeiroTitulo = document.createElement("h1");
       primeiroTitulo.className = "title";
       pai.appendChild(primeiroTitulo);
-      document.querySelector("#primeiroTitulo").innerHTML =
-        "Exercício - JavaScript DOM";
+      document.querySelector(".title").innerHTML = "Exercício - JavaScript DOM";
 
       let conteudoPrincipal = document.createElement("main");
       conteudoPrincipal.className = "main-content";
@@ -111,13 +110,12 @@
         listaNaoOrdenada.appendChild(linhasListaNaoOrdenada);
       }
 
-      for (let index = 1; index <= 3; index += 1){
+      for (let index = 1; index <= 3; index += 1) {
         let titulos = document.createElement("h3");
         titulos.innerHTML = "Títulos" + index;
+        titulos.className = "description";
         conteudoPrincipal.appendChild(titulos);
       }
-
-
     </script>
   </body>
 </html>
