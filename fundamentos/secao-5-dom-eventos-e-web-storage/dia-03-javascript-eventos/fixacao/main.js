@@ -3,7 +3,7 @@ const secondLi = document.getElementById('second-li');
 const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
-
+const tech = document.querySelector(".tech");
 
 // - Copie esse arquivo e edite apenas ele;
 //  - Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
@@ -12,14 +12,18 @@ const myWebpage = document.getElementById('my-spotrybefy');
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 function adicionaClassTech (element){
-    element.className = "tech";
+    tech.classList.remove('tech');
+    element.target.classList.add('tech');
+    input.value = ''; 
 }
+firstLi.addEventListener('click', adicionaClassTech(firstLi))
 secondLi.addEventListener('click', adicionaClassTech(secondLi))
 thirdLi.addEventListener('click', adicionaClassTech(thirdLi))
 
 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
-// com a classe 'tech'; // keyup
+// com a classe 'tech'; // keyup,
+
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
