@@ -69,7 +69,12 @@
 
         let secao = document.createElement('section');
         secao.className = 'center-content';
-        conteudoPrincipal.appendChild(secao)
+        conteudoPrincipal.appendChild(secao);
+
+        let paragrafo = document.createElement('p');
+        secao.appendChild(paragrafo);
+        document.querySelector('p').innerText = 'Estou apredendo a inserir tags via JavaScript';
+
     </script>
   </body>
 </html>
