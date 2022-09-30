@@ -59,7 +59,7 @@
     <script>
       let pai = document.getElementById("pai");
       let primeiroTitulo = document.createElement("h1");
-      primeiroTitulo.id = "primeiroTitulo";
+      primeiroTitulo.className = "title";
       pai.appendChild(primeiroTitulo);
       document.querySelector("#primeiroTitulo").innerHTML =
         "Exercício - JavaScript DOM";
@@ -116,6 +116,8 @@
         titulos.innerHTML = "Títulos" + index;
         conteudoPrincipal.appendChild(titulos);
       }
+
+
     </script>
   </body>
 </html>
