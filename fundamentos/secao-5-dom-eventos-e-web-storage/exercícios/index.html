@@ -67,17 +67,23 @@
         conteudoPrincipal.className = 'main-content';
         pai.appendChild(conteudoPrincipal); 
 
-        let secao = document.createElement('section');
-        secao.className = 'center-content';
-        conteudoPrincipal.appendChild(secao);
+        let secaoCentral = document.createElement('section');
+        secaoCentral.className = 'center-content';
+        conteudoPrincipal.appendChild(secaoCentral);
 
         let paragrafo = document.createElement('p');
         secao.appendChild(paragrafo);
         document.querySelector('p').innerText = 'Estou apredendo a inserir tags via JavaScript';
+
+        let secaoEsquerda = document.createElement('section');
+        secaoEsquerda.className = 'left-content';
+        conteudoPrincipal.appendChild(secaoEsquerda);
+
+        let secaoDireita = document.createElement('section');
+        secaoDireita.className = 'right-content';
+        conteudoPrincipal.appendChild(secaoDireita);
+
         
-        let secao2 = document.createElement('section');
-        secao2.className = 'left-content';
-        conteudoPrincipal.appendChild(secao2);
 
     </script>
   </body>
