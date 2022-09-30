@@ -62,9 +62,12 @@
         primeiroTitulo.id = 'primeiroTitulo'
         pai.appendChild(primeiroTitulo);
         document.querySelector('#primeiroTitulo').innerHTML = 'Exercício - JavaScript DOM'; 
-        console.log(h1);
-
         
+        let conteudoPrincipal = document.createElement('main');
+        conteudoPrincipal.className = 'main-content';
+        pai.appendChild(conteudoPrincipal); 
+
+      
     </script>
   </body>
 </html>
