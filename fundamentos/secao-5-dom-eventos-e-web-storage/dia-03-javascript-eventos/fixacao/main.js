@@ -12,22 +12,24 @@ const tech = document.querySelector(".tech");
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 function adicionaClassTech (element){
-    tech.classList.remove('tech');
-    element.target.classList.add('tech');
-    input.value = ''; 
+  element.className = 'tech';
 }
 firstLi.addEventListener('click', adicionaClassTech(firstLi))
 secondLi.addEventListener('click', adicionaClassTech(secondLi))
 thirdLi.addEventListener('click', adicionaClassTech(thirdLi))
 
-
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech'; // keyup,
 
+input.addEventListener('keyup', function(element){
+  const tech = document.querySelector('.tech');
+  tech.innerText = element.target.value;
+});
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
+
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo; // mouseover
