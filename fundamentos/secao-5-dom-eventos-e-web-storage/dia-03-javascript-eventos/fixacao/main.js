@@ -30,7 +30,9 @@ input.addEventListener('keyup', function(element){
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
-
+myWebpage.addEventListener('dblclick', function(){
+window.location.replace('https://github.com/vitor-nogueira96');
+});
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo; // mouseover
 
