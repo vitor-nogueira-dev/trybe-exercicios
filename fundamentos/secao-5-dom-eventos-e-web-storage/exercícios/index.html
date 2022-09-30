@@ -57,34 +57,38 @@
   </head>
   <body id="pai">
     <script>
-        let pai = document.getElementById('pai');
-        let primeiroTitulo = document.createElement('h1');
-        primeiroTitulo.id = 'primeiroTitulo'
-        pai.appendChild(primeiroTitulo);
-        document.querySelector('#primeiroTitulo').innerHTML = 'Exercício - JavaScript DOM'; 
-        
-        let conteudoPrincipal = document.createElement('main');
-        conteudoPrincipal.className = 'main-content';
-        pai.appendChild(conteudoPrincipal); 
+      let pai = document.getElementById("pai");
+      let primeiroTitulo = document.createElement("h1");
+      primeiroTitulo.id = "primeiroTitulo";
+      pai.appendChild(primeiroTitulo);
+      document.querySelector("#primeiroTitulo").innerHTML =
+        "Exercício - JavaScript DOM";
 
-        let secaoCentral = document.createElement('section');
-        secaoCentral.className = 'center-content';
-        conteudoPrincipal.appendChild(secaoCentral);
+      let conteudoPrincipal = document.createElement("main");
+      conteudoPrincipal.className = "main-content";
+      pai.appendChild(conteudoPrincipal);
 
-        let paragrafo = document.createElement('p');
-        secao.appendChild(paragrafo);
-        document.querySelector('p').innerText = 'Estou apredendo a inserir tags via JavaScript';
+      let secaoCentral = document.createElement("section");
+      secaoCentral.className = "center-content";
+      conteudoPrincipal.appendChild(secaoCentral);
 
-        let secaoEsquerda = document.createElement('section');
-        secaoEsquerda.className = 'left-content';
-        conteudoPrincipal.appendChild(secaoEsquerda);
+      let paragrafo = document.createElement("p");
+      secaoCentral.appendChild(paragrafo);
+      document.querySelector("p").innerText =
+        "Estou apredendo a inserir tags via JavaScript";
 
-        let secaoDireita = document.createElement('section');
-        secaoDireita.className = 'right-content';
-        conteudoPrincipal.appendChild(secaoDireita);
+      let secaoEsquerda = document.createElement("section");
+      secaoEsquerda.className = "left-content";
+      conteudoPrincipal.appendChild(secaoEsquerda);
 
-        
+      let secaoDireita = document.createElement("section");
+      secaoDireita.className = "right-content";
+      conteudoPrincipal.appendChild(secaoDireita);
 
+      let img = document.createElement("img");
+      img.className = "small-image"
+      secaoEsquerda.appendChild(img);
+      img.src = 'https://picsum.photos/200';
     </script>
   </body>
 </html>
