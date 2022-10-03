@@ -17,5 +17,12 @@ window.onload = function () {
     localStorage.setItem("text-color", corTextoSelecionada.value);
   });
 
- 
+  let tamanhoFonte = document.querySelector("#font-size");
+  tamanhoFonte.addEventListener("change", function () {
+    paragrafo.style.fontSize = `${tamanhoFonte.value}px`;
+
+    localStorage.setItem("font-size", `${tamanhoFonte.value}px`);
+  });
+
+  
 };
