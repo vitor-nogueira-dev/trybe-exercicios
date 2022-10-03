@@ -31,5 +31,12 @@ window.onload = function () {
     localStorage.setItem("line-height", `${alturaLinhas.value}px`);
   });
 
- 
+  let fonteTexto = document.querySelector("#tipo-fonte");
+  fonteTexto.addEventListener("change", function () {
+    paragrafo.style.fontFamily = `${fonteTexto.value}`;
+
+    localStorage.setItem("font-family", fonteTexto.value);
+  });
+
+  
 };
