@@ -38,5 +38,18 @@ window.onload = function () {
     localStorage.setItem("font-family", fonteTexto.value);
   });
 
-  
+  let valueBackground = localStorage.getItem("background-color");
+  paragrafo.style.backgroundColor = valueBackground;
+
+  let valueColorText = localStorage.getItem("text-color");
+  paragrafo.style.color = valueColorText;
+
+  let valueFontSize = localStorage.getItem("font-size");
+  paragrafo.style.fontSize = valueFontSize;
+
+  let valueLineHeight = localStorage.getItem("line-height");
+  paragrafo.style.lineHeight = valueLineHeight;
+
+  let valueFontFamily = localStorage.getItem("font-family");
+  paragrafo.style.fontFamily = valueFontFamily;
 };
