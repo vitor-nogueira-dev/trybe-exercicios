@@ -24,5 +24,12 @@ window.onload = function () {
     localStorage.setItem("font-size", `${tamanhoFonte.value}px`);
   });
 
-  
+  let alturaLinhas = document.querySelector("#line-height");
+  alturaLinhas.addEventListener("change", function () {
+    paragrafo.style.lineHeight = `${alturaLinhas.value}px`;
+
+    localStorage.setItem("line-height", `${alturaLinhas.value}px`);
+  });
+
+ 
 };
