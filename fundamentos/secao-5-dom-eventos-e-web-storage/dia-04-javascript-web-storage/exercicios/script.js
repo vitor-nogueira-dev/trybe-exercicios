@@ -9,5 +9,13 @@ window.onload = function () {
     localStorage.setItem("background-color", corSelecionada.value);
   });
 
-  
+  let corTexto = document.querySelector("#cor-text");
+  corTexto.addEventListener("change", function () {
+    let corTextoSelecionada = this.selectedOptions[0];
+    paragrafo.style.color = corTextoSelecionada.value;
+
+    localStorage.setItem("text-color", corTextoSelecionada.value);
+  });
+
+ 
 };
