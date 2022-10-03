@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendi</title>
+    <style>
+        body {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            text-align: center; 
+            font-size: 22px;
+        }
+        
+        .text,
+        h2 {
+            text-align: center;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Defina sua preferências de leitura!!!</h1>
+    <span>Cor de fundo do texto:</span>
+    <select name="background-color" id="cor-background">
+        <option value="lightblue">Azul Claro</option>
+        <option value="gray">Cinza</option>
+        <option value="orange">Laranja</option>
+        <option value="red">Vermelho</option>
+    </select>
+    <br />
+    <span>Cor do texto:</span>
+    <select name="font-color" id="cor-text">
+        <option value="white">Branco</option>
+        <option value="magenta">Rosa</option>
+        <option value="salmon">Salmão</option>
+        <option value="lightblue">Azul claro</option>
+    </select>
+    <br />
+
+    <span>Tamanho Fonte:</span>
+    <input type="number" name="tamanhoFonte" id="font-size" min="16" max="40" />
+
+    <br />
+
+    <span>Espaçamento entre linhas:</span>
+    <input type="number" name="espacamentoLinhas" id="line-height" min="30" max="100" />
+
+    <br />
+    <span>Escolha sua fonte:</span>
+    <select name="font-family" id="tipo-fonte">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="monospace">Mono Espaçada</option>
+    </select>
+    <h2>O melhor da vida</h2>
+    <p class="text">
+        Só a vida reflete o melhor do mundo <br />
+        Só a vida revela o melhor de você <br />
+        Só a vida é capaz de entender <br />
+        a linguagem da saudade, do amor, da <br />
+        verdade. Só a vida, só a vida. <br />
+
+        Pode a terra cair no mar, ou a <br />
+        lua no sol radiante, mas só a <br />
+        vida vai permitir que seus <br />
+        sonho sejam constante. <br />
+        E eu amo <br />
+        Só a vida, só a vida. <br />
+        (Autor Desconhecido)
+    </p>
+    <script src="script.js"></script>
+</body>
+
+</html>
