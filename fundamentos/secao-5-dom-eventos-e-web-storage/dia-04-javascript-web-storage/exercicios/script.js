@@ -5,7 +5,7 @@ window.onload = function () {
   corFundo.addEventListener("change", function () {
     let corSelecionada = this.selectedOptions[0];
     paragrafo.style.backgroundColor = corSelecionada.value;
-
+   
     localStorage.setItem("background-color", corSelecionada.value);
   });
 
@@ -37,6 +37,7 @@ window.onload = function () {
 
     localStorage.setItem("font-family", fonteTexto.value);
   });
+
 
   let valueBackground = localStorage.getItem("background-color");
   paragrafo.style.backgroundColor = valueBackground;
