@@ -6,10 +6,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TrybeTrip</title>
   <style>
+    *{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      
+    }
   
+    body {
+     
+      background-image: url(imagens/maldivas.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+
+    h1{
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+      background-color: rgba(200, 243, 243, 0.29);
+      width: auto;
+      margin-left: 100px;
+      margin-right: 100px;
+      padding: 5px;
+      border-radius: 50px;
+    }
+  .center {
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+    background-color: rgba(200, 243, 243, 0.29);
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+    color: white;
+  }
   </style>
 </head>
 <body>
-  
+  <h1>TrybeTrip</h1>
+
+  <p class="center">Estamos sorteando uma viagem totalmente paga e com várias opções de destino!!!</p>
+<label for="nome">
+ Nome: <input type="text" id="nome">
+</label>
+<br>
+<label for="email">
+ Email: <input type="email" name="email" id="email">
+</label>
+<br>
+<p>Qual País você deseja conhecer ?</p>
+<label for="">
+  <input type="radio" name="país" id="jp"> Japão
+  <input type="radio" name="país" id="br"> Brasil
+  <input type="radio" name="país" id="eua"> EUA
+  <input type="radio" name="país" id="eur"> Europa
+</label>
+<label for="quadropergunta">
+  <textarea name="quadro" id="quadropergunta" cols="30" rows="10" placeholder="Porque você deve ganhar essa viagem ?"></textarea>
+</label>
+<br>
+<p>Qual seria a data ideal para sua viagem?</p>
+<label for="data">
+  <input type="date" name="data" id="data">
+</label>
+<br>
+<p>Concorda em compartilhar seus dados e informações e atesta ser verdade todos os dados submetidos?</p>
+<label for="confirmacao">
+   <input type="checkbox" name="confirmacao" id="concordo"> Concordo
+   <input type="checkbox" name="confirmacao" id="concordo"> Não concordo
+
+</label>
+
 </body>
 </html>
