@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TrybeTrip</title>
-  <style>
-    *{
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      
-    }
-  
-    body {
-     
-      background-image: url(imagens/maldivas.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      
-    }
-
-    h1{
-      text-align: center;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
-      background-color: rgba(200, 243, 243, 0.29);
-      width: auto;
-      margin-left: 100px;
-      margin-right: 100px;
-      padding: 5px;
-      border-radius: 50px;
-    }
-  .center {
-    text-align: center;
-    font-size: 1.2em;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
-    background-color: rgba(200, 243, 243, 0.29);
-    width: auto;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 5px;
-    color: white;
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>TrybeTrip</h1>
+  <header>
+    <h1 class="title">TrybeTrip</h1>
+    <p class="center">Vamos sortear uma viagem totalmente paga e com várias opções de destino!!!</p>
+  </header>
 
-  <p class="center">Estamos sorteando uma viagem totalmente paga e com várias opções de destino!!!</p>
-<label for="nome">
- Nome: <input type="text" id="nome">
-</label>
-<br>
-<label for="email">
- Email: <input type="email" name="email" id="email">
-</label>
-<br>
-<p>Qual País você deseja conhecer ?</p>
-<label for="">
-  <input type="radio" name="país" id="jp"> Japão
-  <input type="radio" name="país" id="br"> Brasil
-  <input type="radio" name="país" id="eua"> EUA
-  <input type="radio" name="país" id="eur"> Europa
-</label>
-<label for="quadropergunta">
-  <textarea name="quadro" id="quadropergunta" cols="30" rows="10" placeholder="Porque você deve ganhar essa viagem ?"></textarea>
-</label>
-<br>
-<p>Qual seria a data ideal para sua viagem?</p>
-<label for="data">
-  <input type="date" name="data" id="data">
-</label>
-<br>
-<p>Concorda em compartilhar seus dados e informações e atesta ser verdade todos os dados submetidos?</p>
-<label for="confirmacao">
-   <input type="checkbox" name="confirmacao" id="concordo"> Concordo
-   <input type="checkbox" name="confirmacao" id="concordo"> Não concordo
+  <section class="container">
+    <form action="" method="get">
+    <p class="title-forms">Para participar, preencha esse formulário!</p>
+      <section class="usuario-e-senha">
+        <label for="nome"> Nome:</label>
+        <input type="text" id="nome">
+        <br>
+        <label for="email"> Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+      </section>
 
-</label>
+      <section class="onde-ficou-sabendo">
 
+        <h4>Onde ficou sabendo do nosso sorteio?</h4>
+
+        <input type="radio" name="onde-ficou-sabendo" id="google" value="google" required>
+        <label for="google">Google</label>
+
+        <input type="radio" name="onde-ficou-sabendo" id="facebook" value="facebook" required>
+        <label for="facebook">Facebook</label>
+
+        <input type="radio" name="onde-ficou-sabendo" id="instagram" value="instagram" required>
+        <label for="instagram">Instagram</label>
+
+        <input type="radio" name="onde-ficou-sabendo" id="site-trybe" value="site-trybe" required>
+        <label for="site-trybe">Site da Trybe</label>
+
+      </section>
+
+      <section class="quadro-pergunta">
+        <label for="quadropergunta"></label>
+        <textarea name="" id="" cols="55" rows="10"
+          placeholder="Porque você merece ganhar essa viagem? (max 500 caracteres)" maxlength="500"></textarea>
+      </section>
+
+      <section class="data-viagem">
+        <label for="data">Qual seria a data ideal para sua viagem?</label>
+        <input type="date" name="data" id="data">
+      </section>
+
+
+      <section class="termos">
+        <label for="concordo">Concorda em compartilhar seus dados e informações? </label>
+        <br>
+        <input type="checkbox" name="concordo" id="concordo" required>
+        <label for="concordo">Concordo</label>
+      </section>
+
+      <section class="enviar-e-resetar">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </section>
+    </form>
+    
+  </section>
+  <br>
+  <footer class="footer">
+    <a class="link-footer" href="https://www.betrybe.com/" target="_blank">Saiba mais</a>
+  </footer>
 </body>
 </html>
