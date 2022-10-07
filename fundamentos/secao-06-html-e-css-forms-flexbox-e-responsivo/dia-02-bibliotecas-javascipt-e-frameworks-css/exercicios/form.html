@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrybeTrip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="title">TrybeTrip</h1>
+    <p class="center">Vamos sortear uma viagem totalmente paga e com várias opções de destino!!!</p>
+  </header>
+
+  <section class="container">
+    <form action="" method="get">
+      <p class="title-forms">Para participar, preencha esse formulário!</p>
+      <fieldset class="usuario-e-senha">
+        <label for="nome"> Nome Completo:</label>
+        <input type="text" id="nome" min="10" max="40">
+        <br>
+        <label for="email"> Email:</label>
+        <input type="email" name="email" id="email" min="10" max="50">
+        <br>
+      </fieldset>
+
+      <fieldset class="destinos-preferidos">
+
+        <h4>Qual seu destino preferido?</h4>
+
+        <input type="radio" name="destino-preferido" id="cidade" value="cidade" required>
+        <label for="cidade">Cidade</label>
+
+        <input type="radio" name="destino-preferido" id="campo" value="campo" required>
+        <label for="campo">Campo</label>
+
+        <input type="radio" name="destino-preferido" id="praia" value="praia" required>
+        <label for="praia">Praia</label>
+
+        <input type="radio" name="destino-preferido" id="montanhas" value="montanhas" required>
+        <label for="montanhas">Montanhas</label>
+
+      </fieldset>
+
+
+      <fieldset class="quadro-pergunta">
+        <label for="quadropergunta"></label>
+        <textarea name="" id="" cols="55" rows="10"
+          placeholder="Porque você merece ganhar essa viagem? (max 500 caracteres)" maxlength="500"></textarea>
+      </fieldset>
+
+      <fieldset class="onde-ficou-sabendo">
+
+        <h4>Onde ficou sabendo do nosso sorteio?</h4>
+
+        <input type="radio" name="onde-ficou-sabendo" id="google" value="google" required>
+        <label for="google">Google</label>
+
+        <input type="radio" name="onde-ficou-sabendo" id="facebook" value="facebook" required>
+        <label for="facebook">Facebook</label>
+
+        <input type="radio" name="onde-ficou-sabendo" id="instagram" value="instagram" required>
+        <label for="instagram">Instagram</label>
+
+        <input type="radio" name="onde-ficou-sabendo" id="site-trybe" value="site-trybe" required>
+        <label for="site-trybe">Site da Trybe</label>
+
+      </fieldset>
+
+      <fieldset class="data-viagem">
+        <label for="data">Qual seria a data ideal para sua viagem?</label>
+        <input type="date" name="data" id="data">
+      </fieldset>
+
+
+      <fieldset class="termos">
+        <label for="receber-oportunidades">Gostaria de receber outras incríveis oportunidades oferecidas pela Tryba? </label>
+        <br>
+        <input type="checkbox" name="receber-oportunidades" id="receber-oportunidades" required>
+        <label for="receber-oportunidades">Sim, gostaria 😍</label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="sim-e-nao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros!!!</label>
+        <input type="radio" name="sim-e-nao" id="sim-e-nao" required>Sim
+        <input type="radio" name="sim-e-nao" id="sim-e-nao" required>Não
+      </fieldset>
+
+
+      <fieldset class="enviar-e-resetar">
+        <input type="submit" value="Enviar" id="submit">
+        <input type="reset" value="Limpar">
+      </fieldset>
+    </form>
+
+  </section>
+  <br>
+  <footer class="footer">
+    <a class="link-footer" href="https://www.betrybe.com/" target="_blank">Saiba mais</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

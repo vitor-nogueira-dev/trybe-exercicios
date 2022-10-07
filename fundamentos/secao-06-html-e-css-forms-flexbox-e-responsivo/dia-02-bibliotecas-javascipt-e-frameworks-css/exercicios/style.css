@@ -1,0 +1,55 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-image: url(imagens/maldivas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+  background-color: rgba(200, 243, 243, 0.29);
+  width: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 5px;
+  border-radius: 50px;
+}
+.title-forms{
+  text-align: center;
+  font-size: 1.2em;
+}
+.center {
+  text-align: center;
+  font-size: 1.2em;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+  background-color: rgba(200, 243, 243, 0.29);
+  width: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+}
+.container {
+  width: auto;
+  background-color: rgba(75, 131, 131, 0.586);
+  padding: 10px;
+  border-radius: 10px;
+}
+.footer{
+  text-align: center;
+  font-size: 1.2em;
+  background-color: rgba(118, 129, 129, 0.678);
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 10px;
+}
+.link-footer{
+  text-decoration: none;
+  color: white;
+}
+
