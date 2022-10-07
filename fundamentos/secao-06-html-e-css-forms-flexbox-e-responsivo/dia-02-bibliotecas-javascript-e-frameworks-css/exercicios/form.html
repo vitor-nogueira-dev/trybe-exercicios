@@ -8,73 +8,73 @@
   <title>TrybeTrip</title>
   <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="style.css">
+ <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
-  <header>
-    <h1 class="title">TrybeTrip</h1>
-    <p class="center">Vamos sortear uma viagem totalmente paga e com várias opções de destino!!!</p>
+  <header class="container mb-4">
+    <h1 class="title display-4">TrybeTrip</h1>
+    <p class="display-6 title-forms">Vamos sortear uma viagem totalmente paga e com várias opções de destino!!!</p>
   </header>
-
+  
   <section class="container">
     <form action="" method="get">
-    <p class="title-forms">Para participar, preencha esse formulário!</p>
+    <p class="title-forms lead" >Para participar, preencha esse formulário!</p>
       <section class="usuario-e-senha">
         <label for="nome"> Nome:</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome"class="form-control">
         <br>
-        <label for="email"> Email:</label>
-        <input type="email" name="email" id="email">
+        <label for="email" class=""> Email:</label>
+        <input type="email" name="email" id="email" class="form-control">
         <br>
       </section>
 
       <section class="onde-ficou-sabendo">
 
-        <h4>Onde ficou sabendo do nosso sorteio?</h4>
+        <h4>Qual seu destino preferido?</h4>
 
-        <input type="radio" name="onde-ficou-sabendo" id="google" value="google" required>
-        <label for="google">Google</label>
+        <input type="radio" name="destido-preferido" id="campo" value="campo" required >
+        <label for="google">Campo</label>
 
-        <input type="radio" name="onde-ficou-sabendo" id="facebook" value="facebook" required>
-        <label for="facebook">Facebook</label>
+        <input type="radio" name="destido-preferido" id="cidade" value="cidade" required>
+        <label for="facebook">Cidade</label>
 
-        <input type="radio" name="onde-ficou-sabendo" id="instagram" value="instagram" required>
-        <label for="instagram">Instagram</label>
+        <input type="radio" name="destido-preferido" id="montanhas" value="montanhas" required>
+        <label for="instagram">Montanhas</label>
 
-        <input type="radio" name="onde-ficou-sabendo" id="site-trybe" value="site-trybe" required>
-        <label for="site-trybe">Site da Trybe</label>
+        <input type="radio" name="destido-preferido" id="praia" value="praia" required>
+        <label for="site-trybe">Praia</label>
 
       </section>
 
-      <section class="quadro-pergunta">
+      <section class="quadro-pergunta ">
         <label for="quadropergunta"></label>
         <textarea name="" id="" cols="55" rows="10"
-          placeholder="Porque você merece ganhar essa viagem? (max 500 caracteres)" maxlength="500"></textarea>
+          placeholder="Porque você merece ganhar essa viagem? (max 500 caracteres)" maxlength="500" class="form-control"></textarea>
       </section>
 
-      <section class="data-viagem">
+      <section class="data-viagem ">
         <label for="data">Qual seria a data ideal para sua viagem?</label>
-        <input type="date" name="data" id="data">
+        <input type="date" name="data" id="data" class="form-control">
       </section>
 
 
-      <section class="termos">
+      <section class="termos ">
         <label for="concordo">Concorda em compartilhar seus dados e informações? </label>
         <br>
-        <input type="checkbox" name="concordo" id="concordo" required>
+        <input type="checkbox" name="concordo" id="concordo" required >
         <label for="concordo">Concordo</label>
       </section>
 
-      <section class="enviar-e-resetar">
-        <input type="submit" value="Enviar" class="fixed-bottom">
-        <input type="reset" value="Limpar">
+      <section class="enviar-e-resetar ">
+        <input type="submit" value="Enviar" class="btn btn-success">
+        <input type="reset" value="Limpar" class="btn btn-danger">
       </section>
     </form>
     
   </section>
   <br>
-  <footer class="footer">
-    <a class="link-footer" href="https://www.betrybe.com/" target="_blank">Saiba mais</a>
-  </footer>
+ 
 </body>
 </html>
