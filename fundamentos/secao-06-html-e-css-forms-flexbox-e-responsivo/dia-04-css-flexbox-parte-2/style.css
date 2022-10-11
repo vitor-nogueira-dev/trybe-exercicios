@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   flex-basis: 268px;
+  order: -1;
 }
 
 .menu-container {
@@ -39,4 +40,13 @@ body {
   list-style: none;
   margin-right: 10px;
   
+}
+.menu-container li:nth-child(1){
+  order: 1;
+}
+.menu-container li:nth-child(2){
+  order: 2;
+}
+.menu-container li:nth-child(3){
+  order: 3;
 }
