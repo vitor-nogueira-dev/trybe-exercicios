@@ -48,3 +48,7 @@ figure {
 figcaption {
   font-size: .8em;
 }
+
+@media (min-width:768px){
+  
+}
