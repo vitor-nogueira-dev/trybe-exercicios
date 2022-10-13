@@ -54,6 +54,7 @@ figcaption {
     background-color: lightblue;
     font-size: 1.8em;
     margin: 40px;
+    text-align: justify;
   }
   h1{
     font-size: 2em;
@@ -67,5 +68,17 @@ figcaption {
     width: 250px;
     align-self: center;
   }
+}
 
+@media (min-width:1024px){
+  body{
+    background-color: lightcoral;
+    font-size: 2em;
+    margin: 50px;
+    text-align: justify;
+    max-width: 90%;
+  }
+  h1, h2{
+    text-align: center;
+  }
 }
