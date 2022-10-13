@@ -52,5 +52,7 @@ figcaption {
 @media (min-width:768px){
   body{
     background-color: lightblue;
+    font-size: 1.6em;
   }
+
 }
