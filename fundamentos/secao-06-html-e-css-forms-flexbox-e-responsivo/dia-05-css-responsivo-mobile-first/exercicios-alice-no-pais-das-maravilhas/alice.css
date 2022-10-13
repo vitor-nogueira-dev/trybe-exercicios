@@ -48,7 +48,6 @@ li{
     font-size: 2em;
     color: white;
     margin-right: 20px;
-
   }
   .header-ul {
     display: flex;
@@ -64,8 +63,66 @@ li{
   }
 }
 
-@media (min-width:768px) and (max-width:1024px){
+@media (min-width:768px){
   body{
-    
+    font-size: 1.4em;
+    margin: 30px;
+    padding: 20px;
+    text-align: justify;
+  }
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #861304;
+    width: auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-container p {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin-right: 20px;
+  }
+  .header-ul {
+    display: flex;
+    padding: 0;
+    margin: auto;
+  }
+  .header-ul li {
+    font-size: 1.5em;
+    list-style: none;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+  }
+  .container-asides{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .aside-one {
+    /* border: 1px solid black; */
+    width: 400px;
+  }
+  .aside-two{
+    /* border: 1px solid black; */
+    width: 400px;
+  }
+  .aside-one ul li{
+    list-style: none;
+  }
+  .aside-two ul li{
+    list-style: none;
+  }
+  .titulo-asides{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+    color: #861304;
   }
 }
