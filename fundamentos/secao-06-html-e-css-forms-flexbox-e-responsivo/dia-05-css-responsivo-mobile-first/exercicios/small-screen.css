@@ -53,6 +53,7 @@ figcaption {
   body{
     background-color: lightblue;
     font-size: 1.6em;
+    margin: 40px;
   }
 
 }
