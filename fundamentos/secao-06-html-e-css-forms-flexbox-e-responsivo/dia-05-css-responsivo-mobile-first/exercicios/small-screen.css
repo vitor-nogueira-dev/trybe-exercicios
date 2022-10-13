@@ -52,8 +52,20 @@ figcaption {
 @media (min-width:768px){
   body{
     background-color: lightblue;
-    font-size: 1.6em;
+    font-size: 1.8em;
     margin: 40px;
+  }
+  h1{
+    font-size: 2em;
+  }
+  section{
+    display: flex;
+    flex-flow: column wrap;
+    height: 1000px;
+  }
+  figure{
+    width: 250px;
+    align-self: center;
   }
 
 }
