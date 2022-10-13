@@ -82,3 +82,29 @@ figcaption {
     text-align: center;
   }
 }
+
+@media (max-width:768px){
+  body{
+    background-color: lightgreen;
+    font-size: 1.5em;
+    text-align: justify;
+    max-width: 100%;
+  }
+  h1, h2{
+    font-size: xx-large;
+    text-align: center;
+  }
+  section{
+    display: flex;
+    flex-flow: column wrap;
+    height: 1000px;
+  }
+  figure{
+    width: 250px;
+    align-self: center;
+  }
+  img{
+    padding: 10px;
+  }
+  
+}
