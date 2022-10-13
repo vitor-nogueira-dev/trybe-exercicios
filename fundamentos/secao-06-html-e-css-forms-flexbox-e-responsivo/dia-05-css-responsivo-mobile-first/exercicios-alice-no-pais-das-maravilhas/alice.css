@@ -78,6 +78,7 @@ li{
     border-radius: 10px;
     justify-content: center;
     align-items: center;
+    
   }
   .header-container p {
     text-align: center;
@@ -125,4 +126,32 @@ li{
     text-align: center;
     color: #861304;
   }
+}
+
+@media (min-width:1024px){
+  body{
+    font-size: 1.8em;
+    margin: 30px;
+    padding: 20px;
+    text-align: justify;
+  }
+  .container-asides{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FF595A ;
+    width: auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    color: #FF595A ;
+  }
+  
 }
