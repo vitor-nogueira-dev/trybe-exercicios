@@ -29,3 +29,23 @@ factorial(5);
 
 // Parte II 
 
+const maiorPalavra = (frase) => {
+  const listaDasPalavras = frase.split(' ');
+  let palavraMaior = 0;
+  let result = '';
+
+  for (const index of listaDasPalavras) {
+    if (index.length > palavraMaior){
+      palavraMaior = index.length;
+      result = index;
+    }
+  }
+   return `A maior palavra da frase é ${result} com ${palavraMaior} letras`;
+}
+console.log(maiorPalavra('Antônio foi ao banheiro e não sabemos o que aconteceu'));
+
+
+// Estrutura da resolução com .sort()
+// const longestWord = text => text.split(' ').sort((wordA, wordB) => wordB.length - wordA.length)[0];
+
+// console.log(longestWord("Antonio foi ao banheiro e não sabemos o que aconteceu"));
