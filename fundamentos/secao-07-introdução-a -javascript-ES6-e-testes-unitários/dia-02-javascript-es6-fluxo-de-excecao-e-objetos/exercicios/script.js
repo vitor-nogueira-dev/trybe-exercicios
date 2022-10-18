@@ -80,14 +80,17 @@ const lesson3 = {
 // console.log(verificaKeys(lesson1))
 
 // Parte III
-const tamanhoObjeto = (obj) => {
-  const arrayObjetos = Object.entries(obj)
-  return arrayObjetos.length
-}
-console.log(tamanhoObjeto(lesson3));
+// const tamanhoObjeto = (obj) => Object.entries(obj).length;
+// console.log(tamanhoObjeto(lesson3));
 
 // Parte IV
-const valoresObjeto = (obj) => {
-  return Object.values(obj)
-}
-console.log(valoresObjeto(lesson3));
+// const valoresObjeto = (obj) => Object.values(obj)
+// console.log(valoresObjeto(lesson3));
+
+// Parte V
+// const allLessons = {};
+const obj = Object.assign({}, {lesson1, lesson2, lesson3});
+
+console.log(obj);
+
+// Parte VI

@@ -56,8 +56,30 @@
 
 const substituaX = (nome) => {
   const frase = 'Tryber x aqui!'
-  let novaFrase = frase.split('x');
-  return novaFrase + nome;
+  let arrayFrase = frase.split(' ');
+  for (let index =0; index < arrayFrase.length; index += 1){
+    if(arrayFrase[index] === 'x'){
+      arrayFrase[index] = nome;
+    }
+  }
+  let result = arrayFrase.join(' ');
+  return result
 
 }
-console.log(substituaX('bebeto'));
+// console.log(substituaX('Bebeto'));
+
+const minhasSkills = (funcao) => {
+  const skills = ['HTML', 'CSS', 'JavaScript']
+  let resultado = `${funcao}
+  Minhas três principais habilidades são:`;
+  for (let index = 0; index < skills.length; index += 1){
+    resultado = `${resultado}
+    - ${skills[index]}`;
+  }
+  return resultado;
+}
+console.log(minhasSkills(substituaX('Bebeto')));
+
+
+// return `${funcao}
+// Minhas três principais habilidades são: ${skills}`
