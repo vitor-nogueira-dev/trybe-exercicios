@@ -70,12 +70,24 @@ const lesson3 = {
 };
 
 // Parte I
-const adicionaTurno = (n1, n2, n3) => n1[n2] = n3;
+// const adicionaTurno = (n1, n2, n3) => n1[n2] = n3;
 
-adicionaTurno(lesson2, 'turno', 'noite');
-console.log(lesson2);
+// adicionaTurno(lesson2, 'turno', 'noite');
+// console.log(lesson2);
 
-// Parte II
-const verificaKeys = (obj) => Object.keys(obj);
+// // Parte II
+// const verificaKeys = (obj) => Object.keys(obj);
+// console.log(verificaKeys(lesson1))
 
-console.log(verificaKeys(lesson1))
+// Parte III
+const tamanhoObjeto = (obj) => {
+  const arrayObjetos = Object.entries(obj)
+  return arrayObjetos.length
+}
+console.log(tamanhoObjeto(lesson3));
+
+// Parte IV
+const valoresObjeto = (obj) => {
+  return Object.values(obj)
+}
+console.log(valoresObjeto(lesson3));
