@@ -1,10 +1,11 @@
+// Exercício 1
 function sum(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number') {
     throw new Error('parameters must be numbers');
   }
   return a + b;
 }
-
+// Exercício 2
 function myRemove(arr, item) {
   let newArr = [];
   for (let index = 0; index < arr.length; index += 1) {
@@ -14,7 +15,7 @@ function myRemove(arr, item) {
   }
   return newArr;
 }
-
+// Exercício 3
 function myFizzBuzz(num) {
   if (typeof num !== 'number') return false;
   if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
@@ -23,5 +24,31 @@ function myFizzBuzz(num) {
   return num;
 }
 
+// Exercício 4
+const vogais = ['a', 'e', 'i', 'o', 'u'];
+const code = [1, 2, 3, 4, 5];
 
-module.exports = {sum, myRemove, myFizzBuzz};
+function encode(text) {
+  const caracters = text.split('');
+  caracters.forEach((letra, i) => {
+    vogais.forEach((vogal, k) => {
+      caracters[i] = (letra === vogal) ? code[k] : caracters[i];
+    });
+  });
+
+  return caracters.join('');
+}
+
+function decode(text) {
+  const caracters = text.split('');
+  caracters.forEach((caracter, i) => {
+    code.forEach((num, k) => {
+      caracters[i] = (caracter === num.toString()) ? vogais[k] : caracters[i];
+    });
+  });
+
+  return caracters.join('');
+}
+
+console.log(encode('Olá, sou estudante de desenvolvimento na Trybe'));
+module.exports = {sum, myRemove, myFizzBuzz, encode, decode};
