@@ -1,6 +1,6 @@
 // import {describe, expect, test} from '@jest/globals'
 
-const sum = require('./sum');
+const {sum, myRemove} = require('./sum');
 
 describe('Testando a soma dos números', () => { 
   it('A soma de 4 e 5 é 9', () => {
@@ -19,3 +19,15 @@ describe('Testando a soma dos números', () => {
     expect(( ) => sum(4, '5')).toThrow('parameters must be numbers')
   })
 })
+describe('Teste em um array', () => { 
+  const array = [1, 2, 3, 4]
+  it('Removendo o número 3 do array [1, 2, 3, 4]', () => {
+    expect(myRemove(array, 3)).toEqual([1, 2, 4])
+  })
+  it('Verificando se a função NÃO retorna o array completo', () => {
+    expect(myRemove(array, 3)).not.toEqual(array)
+  })
+  it('Verificando se a função retorna o array esperado', () => {
+    expect(myRemove(array, 5)).toEqual(array)
+  })
+});
