@@ -1,6 +1,6 @@
 // import {describe, expect, test} from '@jest/globals'
 
-const {sum, myRemove} = require('./sum');
+const {sum, myRemove, myFizzBuzz} = require('./sum');
 
 describe('Testando a soma dos números', () => { 
   it('A soma de 4 e 5 é 9', () => {
@@ -31,3 +31,20 @@ describe('Teste em um array', () => {
     expect(myRemove(array, 5)).toEqual(array)
   })
 });
+describe('Verificando se o número é divisível por 3 e 5', () => { 
+  it('Verificando se 15 é divisível por 3 e 5', ( )=> {
+    expect(myFizzBuzz(15)).toBe('fizzbuzz')
+  })
+  it('Verificando se 9 é divisível por 3', () => {
+    expect(myFizzBuzz(9)).toBe('fizz')
+  })
+  it('Veirificandpo se 50 é divisível por 5', () => {
+    expect(myFizzBuzz(50)).toBe('buzz')
+  })
+  it('Verificando se 11 NÃO é divisível por 3 e 5', () => {
+    expect(myFizzBuzz(11)).toBe(11)
+  })
+  it('Verificando se NUMBER é um número', () => {
+    expect(myFizzBuzz('NUMBER')).toBeFalsy()
+  })
+})
