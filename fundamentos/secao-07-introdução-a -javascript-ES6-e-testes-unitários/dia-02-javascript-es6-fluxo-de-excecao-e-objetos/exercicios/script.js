@@ -93,4 +93,18 @@ const obj = Object.assign({}, {lesson1, lesson2, lesson3});
 
 console.log(obj);
 
+const numeroTotalEstudantes = (obj) => {
+  let total = 0;
+  const array = Object.keys(obj);
+  for (let index = 0; index < array.length; index += 1){
+    total += obj[array[index]].numeroEstudantes
+  }
+  return total
+}
+
+console.log(numeroTotalEstudantes(obj));
 // Parte VI
+
+const valorChave = (lesson1, 1) => {
+
+}
