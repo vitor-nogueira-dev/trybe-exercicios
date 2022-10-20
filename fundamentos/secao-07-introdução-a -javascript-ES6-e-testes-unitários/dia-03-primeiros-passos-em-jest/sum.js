@@ -49,6 +49,21 @@ function decode(text) {
 
   return caracters.join('');
 }
+const tecnologias = ['React', 'Jest', 'HTML', 'CSS', 'JavaScript']
+const techList = (array, name) => {
+  if(array.length === 0 ) 
+  return 'Vazio!'
+  const arrayOrdenado = array.sort()
+  const listaTecnologias = [];
+  for (let index = 0; index < arrayOrdenado.length; index += 1){
+    listaTecnologias.push({
+      tech: arrayOrdenado[index],
+      name: name
+    });
+  } 
+  return listaTecnologias
+} 
 
-console.log(encode('Olá, sou estudante de desenvolvimento na Trybe'));
-module.exports = {sum, myRemove, myFizzBuzz, encode, decode};
+console.log(techList(tecnologias, 'Vitor'));
+
+module.exports = {sum, myRemove, myFizzBuzz, encode, decode, techList};
