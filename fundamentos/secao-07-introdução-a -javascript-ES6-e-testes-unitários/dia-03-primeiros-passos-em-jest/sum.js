@@ -66,4 +66,7 @@ const techList = (array, name) => {
 
 console.log(techList(tecnologias, 'Vitor'));
 
-module.exports = {sum, myRemove, myFizzBuzz, encode, decode, techList};
+const hydrate = () => {
+  
+}
+module.exports = {sum, myRemove, myFizzBuzz, encode, decode, techList, hydrate};
