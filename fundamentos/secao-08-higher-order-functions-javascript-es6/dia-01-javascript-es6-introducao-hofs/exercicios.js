@@ -94,18 +94,19 @@ const dragonDamage = (dragon) => {
   const damageTotal = numberAleatory > numberMinimum ? numberAleatory : numberMinimum;
   return damageTotal;
 }
-console.log(dragonDamage(dragon));
+// console.log(dragonDamage(dragon));
 
 // Crie uma função que retorna o dano causado pelo warrior.
 // O dano será um número aleatório entre o valor do atributo strength (dano mínimo) e o valor de strength * weaponDmg (dano máximo).
 
-const dragonWarrior = (dragon) => {
-  const numberMinimum = dragon.strength;
-  const numberMaximum = numberMinimum * dragon.weaponDmg; 
-  const numberAleatory = Math.random() * numberMaximum;
-  return numberAleatory;
+const dragonWarrior = (warrior) => {
+  const numberMinimum = warrior.strength;
+  const numberMaximum = numberMinimum * warrior.weaponDmg; 
+  const numberAleatory = Math.floor(Math.random() * numberMaximum);
+  const damageTotal = numberAleatory > numberMinimum ? numberAleatory : numberMaximum
+  return damageTotal;
 }
-// console.log(dragonWarrior(warrior));
+console.log(dragonWarrior(warrior));
 
 // Crie uma função que retorna um objeto com duas chaves e dois valores contendo o dano e a mana gasta pelo mago em um turno.
 // O dano será um número aleatório entre o valor do atributo intelligence (dano mínimo) e o valor de intelligence * 2 (dano máximo).
@@ -116,16 +117,16 @@ const teste = (dragon) => {
   let mana = dragon.mana; // consumida por turno
   const minimumDamage = dragon.intelligence;
   const maximumDamage = (minimumDamage * 2);
-  const damage = Math.random() * (maximumDamage - minimumDamage) + minimumDamage;
-  if (mana < 15){
-    mana = 0;
-    return `Não possui mana suficiente`
+  const damage = Math.floor(Math.random() * (maximumDamage - minimumDamage) + minimumDamage);
+  const round = {
+    mana: 0,
+    damage: 'Não possui mana suficiente',
   }
-  retornoRound = {
-    dano: damage,
-    mana: mana
-  };
-  return retornoRound
+  if (mana >= 15) {
+    round.mana = mana,
+    round.damage = damage,
+  }
+  return round;
 }
 
 // console.log(teste(mage));
