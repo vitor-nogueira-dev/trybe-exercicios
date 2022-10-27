@@ -19,5 +19,3 @@ const studentAverage = () => {
       grades[index].reduce((acc, curr) => acc + curr, 0) / grades[index].length,
   }));
 };
-
-console.log(studentAverage());
