@@ -14,7 +14,7 @@ const expectedResult = 20;
 
 // Dado o array de nomes, utilize o reduce para retornar a quantidade de vezes em que aparece a letra a, maiúscula ou minúscula.
 
-const letterA = () => {
+const teste = () {
   let totalLettersA = 0;
   names.forEach((name) => {
     const letrasDosNomes = name.split("");
@@ -26,5 +26,4 @@ const letterA = () => {
     }, 0);
   })
  return totalLettersA;
-};
-console.log(letterA());
+}
