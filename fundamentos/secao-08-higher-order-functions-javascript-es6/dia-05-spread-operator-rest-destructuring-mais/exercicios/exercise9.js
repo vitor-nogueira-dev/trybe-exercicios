@@ -8,9 +8,13 @@
 
 
 const yearSeasons = {
-  spring: ['March', 'April', 'May'],
-  summer: ['June', 'July', 'August'],
-  autumn: ['September', 'October', 'November'],
-  winter: ['December', 'January', 'February'],
+  spring: ['March', 'April', 'May'], // primavera - março até junho
+  summer: ['June', 'July', 'August'], // verão - junho até setembro
+  autumn: ['September', 'October', 'November'], // outono - setembro até dezembro
+  winter: ['December', 'January', 'February'], // inverno - dez até março
 };
 // yearSeasons: estações do ano.
+const { spring, summer, autumn, winter } = yearSeasons;
+const months = [...spring, ...summer, ...autumn, ...winter];
+
+console.log(months)
