@@ -1,9 +1,9 @@
-# Trybe-exercicios :rocket:
+# Trybe-exercicios 🚀
 Contém todas as atividades desenvolvidas por [mim](https://github.com/vitor-nogueira96) durante minha trajetória na [Trybe](https://app.betrybe.com)
 
 >"O programa conta com mais de 1.500 horas de aulas ao vivo e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais - SoftSkils."
 
-## Módulo 1 - Fundamentos do Desenvolvimento Web 👨🏼‍💻
+## Módulo 1 - Fundamentos do Desenvolvimento Web 👨🏼‍💻✅
 
 ##### Seção 1: Introdução - Unix & Shell
 
@@ -66,7 +66,7 @@ Contém todas as atividades desenvolvidas por [mim](https://github.com/vitor-nog
 - [x] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [x] 8-6: _[Projeto - Zoo functions]()_
 
-## Módulo 2 - Desenvolvimento Front-end 👨🏼‍💻
+## Módulo 2 - Desenvolvimento Front-end 👨🏼‍💻⏳
 ##### Seção 1: JavaScript e Testes Assíncronos
 
 - [ ] 1-1: _Ambiente de desenvolvimento_
@@ -129,7 +129,7 @@ Contém todas as atividades desenvolvidas por [mim](https://github.com/vitor-nog
 
 - [ ] 10-1: _[Projeto - App de Receitas]()_
 
-## Módulo 3 - Desenvolvimento Back-end 👨🏼‍💻
+## Módulo 3 - Desenvolvimento Back-end 👨🏼‍💻⏳
 
 ##### Seção 1: Docker: Utilizando Containers
 
@@ -227,7 +227,7 @@ Contém todas as atividades desenvolvidas por [mim](https://github.com/vitor-nog
 - [ ] 14-1: _Dia 1 - VPS_
 - [ ] 14-2: _Dia 2_
 
-## Módulo 4 - Ciência da Computação 👨🏼‍💻
+## Módulo 4 - Ciência da Computação 👨🏼‍💻⏳
 
 ##### Seção 1 - Introdução à Python
 
