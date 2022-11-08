@@ -1,1 +1,3 @@
-console.log('teste');
+// console.log('teste');
+import validator from 'validator';
+console.log();
