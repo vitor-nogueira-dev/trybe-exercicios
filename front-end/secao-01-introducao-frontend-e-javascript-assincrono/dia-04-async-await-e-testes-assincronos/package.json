@@ -1,0 +1,21 @@
+{
+  "name": "dia-04-async-await-e-testes-assincronos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.6.8",
+    "vite": "^3.2.3"
+  },
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
