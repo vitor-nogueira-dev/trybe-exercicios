@@ -1,8 +1,14 @@
 import './App.css';
+import React from 'react';
 import App from './About';
+import Corpo from './Corpo';
 
-function Teste() {
-    return (<App></App>);
+export default function oi () {
+  return (
+    <>
+    <App/> 
+    <Corpo/>
+    </>
+  );
 }
 
-export default App;
