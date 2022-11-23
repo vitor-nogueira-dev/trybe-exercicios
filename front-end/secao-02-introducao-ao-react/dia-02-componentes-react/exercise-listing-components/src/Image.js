@@ -1,7 +1,10 @@
 import React from 'react'; 
 
-class UserProfile extends React.Component {
+class Image extends React.Component {
   render() {
-    return 
+    const { source, alternativeText } = this.props;
+    return <img src={ source } alt={ alternativeText } />
   }
 }
+
+export default Image
