@@ -5,17 +5,17 @@
 ## Módulo 2 - Desenvolvimento Front-end 👨🏼‍💻
 ##### Seção 1: JavaScript e Testes Assíncronos
 
-- [ ] 1-1: _Ambiente de desenvolvimento_
-- [ ] 1-2: _JavaScript Assíncrono - Promises e fetch_
-- [ ] 1-3: _Casa de Câmbio(prática)_
-- [ ] 1-4: _Async, await e testes assíncronos_
-- [ ] 1-5: _[Projeto - Carrinho de Compras]()_
+- [x] 1-1: _Ambiente de desenvolvimento_
+- [x] 1-2: _JavaScript Assíncrono - Promises e fetch_
+- [x] 1-3: _Casa de Câmbio(prática)_
+- [x] 1-4: _Async, await e testes assíncronos_
+- [x] 1-5: _[Projeto - Carrinho de Compras]()_
 
 ##### Seção 2: Introdução à React
 
-- [ ] 2-1: _'Hello, world!' no React!_
-- [ ] 2-2: _Componentes React_
-- [ ] 2-3: _[Projeto - Sistema Solar]()_
+- [x] 2-1: _'Hello, world!' no React!_
+- [x] 2-2: _Componentes React_
+- [x] 2-3: _[Projeto - Sistema Solar]()_
 
 ##### Seção 3: Componentes com Estado, Eventos e Formulários com React
 
