@@ -1,28 +1,29 @@
-import './App.css';
+import "./App.css";
 
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class App extends Component {
-  segunda = () => {
-    console.log(this, 'Segunda');
-    
+  constructor() {
+    super();
+    this.state = {
+      numeroDeCliques: 0,
+    };
+    this.terca = this.terca.bind(this);
   }
   terca = () => {
-    console.log(this, 'Terça');
-    
-  }
-  quarta = () => {
-    console.log(this, 'Quarta');
-    
-  }
+    this.setState((estadoAnterior, _props) => ({
+      numeroDeCliques: estadoAnterior.numeroDeCliques + 1,
+    }));
+  };
+
   render() {
+    const { numeroDeCliques } = this.state;
     return (
       <div>
-        <button onClick={this.segunda}>Segundoou!!</button>
-        <button onClick={this.terca}>Terçoou!!</button>
-        <button onClick={this.quarta}>Quartoou!!</button>
+        <button type="button" onClick={this.terca}>
+          {numeroDeCliques}
+        </button>
       </div>
-    )
+    );
   }
 }
-
