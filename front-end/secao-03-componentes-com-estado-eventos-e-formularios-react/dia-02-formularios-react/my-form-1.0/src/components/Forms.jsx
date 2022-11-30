@@ -11,38 +11,58 @@ export default class Forms extends Component {
     email: "",
     textArea: "",
     recomendacao: false,
+    formularioComErros: true,
   };
 
+  handleError = () => {
+    const { stackPreferida, nome, email, textArea, recomendacao } = this.state;
+
+    const errorCases = [
+      !stackPreferida,
+      !nome.length,
+      !email.match(/^\S+@\S+$/i),
+      !textArea.length,
+      !recomendacao,
+    ]
+
+    const formularioPreenchido = errorCases.every((error) => error !== true);
+
+    this.setState({formularioComErros: !formularioPreenchido})
+  }
   handleChange = ({ target }) => {
     const value = target.type === "checkbox" ? target.checked : target.value;
     const { name } = target;
-    this.setState({ [name]: value });
+    this.setState({
+      [name]: value 
+    }, this.handleError);
   };
+
   render() {
+    const { stackPreferida, nome, email, textArea, recomendacao } = this.state;
     return (
       <form method="GET">
         <fieldset>
           <legend>Trybe</legend>
           <StackPreferida
-            value={this.state.stackPreferida}
+            value={stackPreferida}
             handleChange={this.handleChange}
           />
           <p></p>
           <DadosPessoais
-            nome={this.state.nome}
-            email={this.state.email}
+            nome={nome}
+            email={email}
             handleChange={this.handleChange}
           />
           <TextArea
-            value={this.state.textArea}
+            value={textArea}
             handleChange={this.handleChange}
           />
-          <p>{this.state.textArea}</p>
+          <p>{textArea}</p>
           <button type="submit">Enviar </button>
           <p></p>
 
           <Recomendacao
-            value={this.state.recomendacao}
+            value={recomendacao}
             handleChange={this.handleChange}
           />
           <input type="file" />
