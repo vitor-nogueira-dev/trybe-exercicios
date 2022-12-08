@@ -43,6 +43,7 @@ class DadJoke extends React.Component {
   render() {
     const { storedJokes, loading, jokeObj } = this.state;
     const loadingElement = <span>Loading...</span>;
+    const { loading} = this.props;
 
     return (
       <div>
