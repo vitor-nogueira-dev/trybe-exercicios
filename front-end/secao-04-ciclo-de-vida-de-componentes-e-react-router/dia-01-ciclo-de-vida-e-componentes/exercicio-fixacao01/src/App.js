@@ -12,7 +12,8 @@ export default class App extends Component {
 
     }
   }
-  async fetchUser() {
+
+  async componentDidMount() {
     this.setState(
       { loading: true },
       async () => {
@@ -24,13 +25,10 @@ export default class App extends Component {
       });
     });
   }
-  componentDidMount() {
-    this.fetchUser()
-  }
+
   shouldComponentUpdate(_nextProps, nextState) {
     const age = 50;
-    console.log(nextState.user.some((user) => user.dob.age < age))
-    if (nextState.user.some((user) => user.dob.age > age)) return false;
+    if (nextState.user.some((user) => user.dob.age > age ))return false;
     return true;
   }
   render() {
