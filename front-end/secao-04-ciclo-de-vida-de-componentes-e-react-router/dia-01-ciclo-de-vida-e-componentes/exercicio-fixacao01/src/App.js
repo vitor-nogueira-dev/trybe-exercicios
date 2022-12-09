@@ -8,8 +8,7 @@ export default class App extends Component {
     this.state = {
       loading: true,
       user: [],
-      age: 0,
-
+      age: false,
     }
   }
 
@@ -22,15 +21,17 @@ export default class App extends Component {
       this.setState({
         loading: false,
         user: requestResponse.results,
-      });
+        age: requestResponse.results.some((user) => user.dob.age > 50)
+      }); 
     });
   }
 
-  shouldComponentUpdate(_nextProps, nextState) {
-    const age = 50;
-    if (nextState.user.some((user) => user.dob.age > age ))return false;
-    return true;
+  shouldComponentUpdate(_nextProps, _nextState) {
+    const { age } = this.state;
+    return !(age);
   }
+  // true ou false
+
   render() {
     return (
       <div className="App">
