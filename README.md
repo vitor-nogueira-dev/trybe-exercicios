@@ -69,29 +69,29 @@ Contém todas as atividades desenvolvidas por [mim](https://github.com/vitor-nog
 ## Módulo 2 - Desenvolvimento Front-end 👨🏼‍💻⏳
 ##### Seção 1: JavaScript e Testes Assíncronos
 
-- [ ] 1-1: _Ambiente de desenvolvimento_
-- [ ] 1-2: _JavaScript Assíncrono - Promises e fetch_
-- [ ] 1-3: _Casa de Câmbio(prática)_
-- [ ] 1-4: _Async, await e testes assíncronos_
-- [ ] 1-5: _[Projeto - Carrinho de Compras]()_
+- [x] 1-1: _Ambiente de desenvolvimento_
+- [x] 1-2: _JavaScript Assíncrono - Promises e fetch_
+- [x] 1-3: _Casa de Câmbio(prática)_
+- [x] 1-4: _Async, await e testes assíncronos_
+- [x] 1-5: _[Projeto - Carrinho de Compras]()_
 
 ##### Seção 2: Introdução à React
 
-- [ ] 2-1: _'Hello, world!' no React!_
-- [ ] 2-2: _Componentes React_
-- [ ] 2-3: _[Projeto - Sistema Solar]()_
+- [x] 2-1: _'Hello, world!' no React!_
+- [x] 2-2: _Componentes React_
+- [x] 2-3: _[Projeto - Sistema Solar](https://solar-system-vn.netlify.app/)_
 
 ##### Seção 3: Componentes com Estado, Eventos e Formulários com React
 
-- [ ] 3-1: _Components com estado e eventos_
-- [ ] 3-2: _Formulários no React_
-- [ ] 3-3: _[Projeto - Tryunfo]()_
+- [x] 3-1: _Components com estado e eventos_
+- [x] 3-2: _Formulários no React_
+- [x] 3-3: _[Projeto - Tryunfo](https://tryunfo-vn.netlify.app/)_
 
 ##### Seção 4: Ciclo de Vida de Componentes e React Router
 
-- [ ] 4-1: _Ciclo de vida de componentes_
-- [ ] 4-2: _React Router_
-- [ ] 4-3: _[Projeto - TrybeTunes]()_
+- [x] 4-1: _Ciclo de vida de componentes_
+- [x] 4-2: _React Router_
+- [x] 4-3: _[Projeto - TrybeTunes](https://trybetunes-vn.netlify.app/)_
 
 ##### Seção 5: Metodologias Ágeis
 
