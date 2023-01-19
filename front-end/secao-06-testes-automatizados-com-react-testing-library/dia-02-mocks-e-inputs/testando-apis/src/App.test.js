@@ -18,10 +18,10 @@ describe('fetches a joke', () => {
   // // // O jest.spyOn espiona as chamadas à função fetch do objeto global. É por meio deste objeto global que conseguimos usar qualquer função do sistema, por exemplo, a função parseInt;
   // // jest.spyOn(global, 'fetch');
   // // // Quando a função fetch for chamada, em vez de fazer uma requisição a uma API externa, será chamado nosso mock. Repare que para cada .then utilizamos .mockResolvedValue e simulamos o retorno que o fetch teria.
-  // // global.fetch.mockResolvedValue({
-  // //   // aqui seria o response.json()
-  // //   json: jest.fn().mockResolvedValue(joke),
-  // // });
+  // global.fetch.mockResolvedValue({
+  //   // aqui seria o response.json()
+  //   json: jest.fn().mockResolvedValue(joke),
+  // });
 
   // // Outra forma de mock do fetch:
   // // // Nesse exemplo estamos dizendo que global.fetch agora é uma função mockada com jest.fn que retorna uma Promise, e na primeira vez que ela for resolvida, deve retornar um objeto com uma outra função json que também é uma Promise, que quando resolvida retorna sua piada.
@@ -60,7 +60,8 @@ describe('fetches a joke', () => {
     jest.spyOn(global, 'fetch');
 
     global.fetch.mockResolvedValueOnce({
-      json: jest.fn().mockResolvedValue(jokeOne),
+      json: jest.spyOn(global, 'JSON').mockResolvedValue(jokeOne)
+      // json: jest.fn().mockResolvedValue(jokeOne),
     })
 
     render(<App />);
