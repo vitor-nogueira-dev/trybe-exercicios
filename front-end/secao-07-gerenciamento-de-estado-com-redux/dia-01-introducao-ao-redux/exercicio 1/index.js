@@ -16,19 +16,13 @@ function criarCor() {
   }
   return cor;
 }
-// const color = criarCor();
-// const t = [];
-// const a = ['white', 'black', 'red', 'green', 'blue', 'yellow'];
-// a.push(criarCor());
-
-// console.log(a);
 
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "NEXT_COLOR": 
       return {
         ...state,
-        index: state.index === state.colors.length ? state.index -1 : state.index + 1,
+        index: state.index === state.colors.length -1 ? state.index : state.index + 1,
       }
     case "PREVIOUS_COLOR": 
       return {
@@ -36,10 +30,8 @@ const reducer = (state = INITIAL_STATE, action) => {
         index: state.index === 0 ? 0 : state.index - 1,
       }
     case "RANDOM_COLOR":
-      // const color = criarCor();
       return {
         ...state,
-        // colors: state.colors.push(criarCor())
         colors: [...state.colors, criarCor()],
         index: state.colors.length - 1,
       }
